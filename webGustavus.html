@@ -7,11 +7,45 @@
 <style>
     body {background-color: rgb(204, 252, 226);}
     h1 {color: green; font-size: 200%; text-align: center; font-family: Algerian, Arial;}
+    .EssenceSkillGlobal 
+    {
+        border: 2px solid grey;
+        border-radius: 10px;
+        background-color: silver;
+        height: 150px;
+    }
+    dt.EssenceSkillTitle
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 200%;
+        text-decoration: underline;
+        text-shadow: 2px 2px 5px green;
+    }
+    dd.EssenceSkillDescription
+    {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 150%;
+    }
 </style>
 
 </head>
 
 <body>
     <h1>La pagina de Gustavus</h1>
+
+    <div><!--Essence skills section-->
+        <h2>Tus habilidades de esencia</h2>
+        <dl>
+            <div class=EssenceSkillGlobal>
+            <dt class="EssenceSkillTitle">Fragor de la batalla</dt>
+            <dd class="EssenceSkillDescription">
+                <img src="Images/FragorBatalla.png" alt="Fragor de la batalla" style="float:left;width:100px;height:100px;">
+                Como accion adicional te llenas de vigor conquistador estando rodeado por el enemigo y tu eficiencia en combate aumenta.
+                Obtienes +1 a tu clase de armadura y tus tiradas de ataque y salvacion; Y +1 adicional por cada enemigo a 5 pies de ti. El efecto dura 2 rondas.
+            </dd>
+            </div>
+        </dl>
+    </div>
+
 </body>
 </html>
