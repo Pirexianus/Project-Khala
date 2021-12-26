@@ -7,6 +7,8 @@
 <style>
     body {background-color: rgb(204, 252, 226);}
     h1 {color: green; font-size: 200%; text-align: center; font-family: Algerian, Arial;}
+    h2 {font-size: 250%; text-align: center; font-family: Consolas; text-decoration: underline;}
+    p  {margin-left: 80px; margin-right: 80px; font-size: large;}
     .EssenceSkillGlobal 
     {
         border: 2px solid grey;
@@ -33,16 +35,74 @@
 <body>
     <h1>La pagina de Gustavus</h1>
 
+    <div><!--Essence global rules section-->
+        <h2>La esencia del mundo</h2>
+        <p>
+            Una extraña materia o energía mágica de la que nadie sabe nada, o al menos así debería ser según <b>Ivern</b>. La calavera era recelosa de hablar en profundidad
+            sobre la naturaleza de la esencia, si es que poseía tal nivel de conocimiento, pero está bastante claro que guarda una estrecha relación con Los peregrinos; 
+            De hecho, <b>Arkamedes</b> parecía un faro cegador ante los ojos de esencia. Según lo poco que reveló Ivern, la esencia está en cierta forma fuera del tiempo, 
+            lo que permite observar eventos pasados y futuros relacionados con ella. Asimismo, la esencia se encuentra en toda la vida y al consumir la esencia de un cuerpo
+            el resultado es igual con una mosca que con un dragón, pero al hacerlo se "elimina completamente de la existencia" a dicho ser, sin ningún más allá ni 
+            forma de resurrección.<br>
+            Si se es sensible a la esencia, es posible encontrarla tirada en lugares donde sus usuarios hayan muerto o se hayan practicado métodos de recolección aparte del vampirismo.
+            <br>Puedes absorber esencia material entrando en contacto físico con ella (1 pto por cada galón asimilado) mientras tu medidor de esencia no esté lleno
+        </p>
+    </div>
+
+
     <div><!--Essence skills section-->
         <h2>Tus habilidades de esencia</h2>
+        <h2 style="font-size: 200%;text-align: center;"><ins>Globales</ins></h2>
         <dl>
             <div class=EssenceSkillGlobal>
-            <dt class="EssenceSkillTitle">Fragor de la batalla</dt>
-            <dd class="EssenceSkillDescription">
-                <img src="Images/FragorBatalla.png" alt="Fragor de la batalla" style="float:left;width:100px;height:100px;">
-                Como accion adicional te llenas de vigor conquistador estando rodeado por el enemigo y tu eficiencia en combate aumenta.
-                Obtienes +1 a tu clase de armadura y tus tiradas de ataque y salvacion; Y +1 adicional por cada enemigo a 5 pies de ti. El efecto dura 2 rondas.
-            </dd>
+                <dt class="EssenceSkillTitle">Ojos de esencia (3 veces por descanso)</dt>
+                <dd class="EssenceSkillDescription">
+                    <img src="Images/OjosEsencia.png" alt="Ojos de esencia" style="float:left;width:100px;height:100px;">
+                    Como acción, te vuelves muy sensible a la esencia durante un minuto, lo que te permite ver quiénes son usuarios de esencia, así como los espíritus de esencia
+                    con asuntos pendientes y ecos de actos pasados que implicaron esencia. De este modo se puede consumir su esencia o comunicarse y/o aprender sobre ellos.
+                </dd>
+            </div>
+            
+            <div class=EssenceSkillGlobal>
+                <dt class="EssenceSkillTitle">Vampirismo de esencia</dt>
+                <dd class="EssenceSkillDescription">
+                    <img src="Images/VampirismoEsencia.png" alt="Vampirismo de esenica" style="float:left;width:100px;height:100px;">
+                    Como acción consumes un espíritu de esencia o cadáver o le arrebatas la esencia a un usuario vivo a un alcance de 30 pies. En este último caso, 
+                    el objetivo se enfrenta a una TS de inteligencia y no le ocurre nada en caso de éxito, pero en caso de fallo le robas un pto de esencia. 
+                    Puedes usar esta acción, aunque tu medidor de esencia esté lleno.
+                </dd>
+            </div>
+
+            <div class=EssenceSkillGlobal>
+                <dt class="EssenceSkillTitle">Vinculo de esencia</dt>
+                <dd class="EssenceSkillDescription">
+                    <img src="Images/VinculoEsencia.png" alt="Vinculo de esencia" style="float:left;width:100px;height:100px;">
+                    Podéis comunicaros telepáticamente con otros usuarios de esencia a una milla a la redonda si los habéis visto con los ojos de esencia al menos una vez. 
+                    Es posible impedir a usuarios específicos contactar con vosotros y volver a permitírselo luego.
+                </dd>
+            </div>
+        </dl>
+
+        <p>En ningún caso puedes sobrepasar el máximo de tu medidor de esencia (actualmente 1 pto).<br> Al finalizar un descanso prolongado, elijes una de tus habilidades de esencia para prepararla y poder usarla.</p>
+
+        <h2 style="font-size: 200%;text-align: center;"><ins>Coste 1</ins></h2>
+        <dl>
+            <div class=EssenceSkillGlobal>
+                <dt class="EssenceSkillTitle">Fragor de la batalla</dt>
+                <dd class="EssenceSkillDescription">
+                    <img src="Images/FragorBatalla.png" alt="Fragor de la batalla" style="float:left;width:100px;height:100px;">
+                    Como accion adicional te llenas de vigor conquistador estando rodeado por el enemigo y tu eficiencia en combate aumenta.
+                    Obtienes +1 a tu clase de armadura y tus tiradas de ataque y salvacion; Y +1 adicional por cada enemigo a 5 pies de ti. El efecto dura 2 rondas.
+                </dd>
+            </div>
+            
+            <div class=EssenceSkillGlobal>
+                <dt class="EssenceSkillTitle">Desafio ineludible</dt>
+                <dd class="EssenceSkillDescription">
+                    <img src="Images/DesafioIneludible.png" alt="Desafio ineludible" style="float:left;width:100px;height:100px;">
+                    Como acción adicional, tiras de un enemigo a hasta 60 pies, atrayéndolo 30 pies hacia ti salvo que supere una TS de fuerza. 
+                    Las criaturas de tu tamaño o menores que no sean usuarios de esencia fallan automáticamente.
+                </dd>
             </div>
         </dl>
     </div>
