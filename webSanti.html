@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+<title>La pagina de Santi</title>
+
+<style>
+    body {background-color: rgb(204, 252, 226);}
+    h1 {color: green; font-size: 200%; text-align: center; font-family: Algerian, Arial;}
+    h2 {font-size: 250%; text-align: center; font-family: Consolas; text-decoration: underline;}
+    p  {margin-left: 80px; margin-right: 80px; font-size: large;}
+    .EssenceSkillGlobal 
+    {
+        border: 2px solid grey;
+        border-radius: 10px;
+        background-color: silver;
+        height: 150px;
+    }
+    dt.EssenceSkillTitle
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 200%;
+        text-decoration: underline;
+        text-shadow: 2px 2px 5px green;
+    }
+    dd.EssenceSkillDescription
+    {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 150%;
+    }
+</style>
+
+</head>
+
+<body>
+    <h1>La pagina de Santi</h1>
+
+    <div><!--Essence global rules section-->
+        <h2>La esencia del mundo</h2>
+        <p>
+            Una extraña materia o energía mágica de la que nadie sabe nada, o al menos así debería ser según <b>Ivern</b>. La calavera era recelosa de hablar en profundidad
+            sobre la naturaleza de la esencia, si es que poseía tal nivel de conocimiento, pero está bastante claro que guarda una estrecha relación con Los peregrinos; 
+            De hecho, <b>Arkamedes</b> parecía un faro cegador ante los ojos de esencia. Según lo poco que reveló Ivern, la esencia está en cierta forma fuera del tiempo, 
+            lo que permite observar eventos pasados y futuros relacionados con ella. Asimismo, la esencia se encuentra en toda la vida y al consumir la esencia de un cuerpo
+            el resultado es igual con una mosca que con un dragón, pero al hacerlo se "elimina completamente de la existencia" a dicho ser, sin ningún más allá ni 
+            forma de resurrección.<br>
+            Si se es sensible a la esencia, es posible encontrarla tirada en lugares donde sus usuarios hayan muerto o se hayan practicado métodos de recolección aparte del vampirismo.
+            <br>Puedes absorber esencia material entrando en contacto físico con ella (1 pto por cada galón asimilado) mientras tu medidor de esencia no esté lleno
+        </p>
+    </div>
+
+
+    <div><!--Essence skills section-->
+        <h2>Tus habilidades de esencia</h2>
+        <h2 style="font-size: 200%;text-align: center;"><ins>Globales</ins></h2>
+        <dl>
+            <div class=EssenceSkillGlobal>
+                <dt class="EssenceSkillTitle">Ojos de esencia (3 veces por descanso)</dt>
+                <dd class="EssenceSkillDescription">
+                    <img src="Images/OjosEsencia.png" alt="Ojos de esencia" style="float:left;width:100px;height:100px;">
+                    Como acción, te vuelves muy sensible a la esencia durante un minuto, lo que te permite ver quiénes son usuarios de esencia, así como los espíritus de esencia
+                    con asuntos pendientes y ecos de actos pasados que implicaron esencia. De este modo se puede consumir su esencia o comunicarse y/o aprender sobre ellos.
+                </dd>
+            </div>
+            
+            <div class=EssenceSkillGlobal>
+                <dt class="EssenceSkillTitle">Vampirismo de esencia</dt>
+                <dd class="EssenceSkillDescription">
+                    <img src="Images/VampirismoEsencia.png" alt="Vampirismo de esencia" style="float:left;width:100px;height:100px;">
+                    Como acción consumes un espíritu de esencia o cadáver o le arrebatas la esencia a un usuario vivo a un alcance de 30 pies. En este último caso, 
+                    el objetivo se enfrenta a una TS de inteligencia y no le ocurre nada en caso de éxito, pero en caso de fallo le robas un pto de esencia. 
+                    Puedes usar esta acción, aunque tu medidor de esencia esté lleno.
+                </dd>
+            </div>
+
+            <div class=EssenceSkillGlobal>
+                <dt class="EssenceSkillTitle">Vinculo de esencia</dt>
+                <dd class="EssenceSkillDescription">
+                    <img src="Images/VinculoEsencia.png" alt="Vinculo de esencia" style="float:left;width:100px;height:100px;">
+                    Podéis comunicaros telepáticamente con otros usuarios de esencia a una milla a la redonda si los habéis visto con los ojos de esencia al menos una vez. 
+                    Es posible impedir a usuarios específicos contactar con vosotros y volver a permitírselo luego.
+                </dd>
+            </div>
+        </dl>
+
+        <p>En ningún caso puedes sobrepasar el máximo de tu medidor de esencia (actualmente 1 pto).<br> Al finalizar un descanso prolongado, elijes una de tus habilidades de esencia para prepararla y poder usarla.</p>
+
+        <h2 style="font-size: 200%;text-align: center;"><ins>Coste 1</ins></h2>
+        <dl>
+            <div class=EssenceSkillGlobal>
+                <dt class="EssenceSkillTitle">Bendicion de esencia</dt>
+                <dd class="EssenceSkillDescription">
+                    <img src="Images/BendicionEsencia.png" alt="Bendicion de esencia" style="float:left;width:100px;height:100px;">
+                    Como acción, bendices a un aliado a 30 pies de ti, lo que durante un minuto le permite sumar tu bonificador por competencia a sus tiradas de ataque
+                    y de salvación, además de librarle de los estados Asustado, aturdido, cegado, ensordecido, envenenado, hechizado y paralizado. 
+                    Si la bendición no le libró de uno de esos estados al ser lanzada y el aliado fuera a caer en uno de ellos, en vez de eso la bendición termina.
+                </dd>
+            </div>
+            
+            <div class=EssenceSkillGlobal>
+                <dt class="EssenceSkillTitle">Maldicion de esencia</dt>
+                <dd class="EssenceSkillDescription">
+                    <img src="Images/MaldicionEsencia.png" alt="Maldicion de esencia" style="float:left;width:100px;height:100px;">
+                    Como acción, maldices a un enemigo a 30 pies de ti a no ser que supere una TS de inteligencia. Durante un minuto resta tu bonificador por competencia
+                    a sus tiradas de ataque y pruebas de característica. Si el objetivo hace una TS, puedes usar tu reacción para acabar con la maldición
+                    e imponerle desventaja en la misma.
+                </dd>
+            </div>
+
+            <div class=EssenceSkillGlobal>
+                <dt class="EssenceSkillTitle">Esencia de la simpatia</dt>
+                <dd class="EssenceSkillDescription">
+                    <img src="Images/EsenciaSimpatia.png" alt="Esencia de la simpatia" style="float:left;width:100px;height:100px;">
+                    Como acción antes de hacer una prueba de persuasión, perspicacia o intimidar, puedes usar esta habilidad para tener éxito automáticamente contra
+                    criaturas no hostiles que no sean usuarios de esencia. Si eso no se cumple, obtienes ventaja en la prueba. Debes elegir si usar esta habilidad
+                    o no antes de tirar los dados para la prueba. Al día siguiente, la criatura se da cuenta de que la has manipulado.
+                </dd>
+            </div>
+        </dl>
+
+        <!--
+        <h2 style="font-size: 200%;text-align: center;"><ins>Coste 2</ins></h2>
+        <dl>
+            <div class=EssenceSkillGlobal>
+                <dt class="EssenceSkillTitle">Ira demente</dt>
+                <dd class="EssenceSkillDescription">
+                    <img src="Images/IraDemente.png" alt="Ira demente" style="float:left;width:100px;height:100px;">
+                    
+                    Como acción adicional, entras en un frenesí que dura 1 minuto o hasta verte incapacitado o pasar una ronda sin infligir daño, lo que te otorga estos beneficios:
+                        >Tu velocidad aumenta en 30 pies y no provocas ataques de oportunidad
+                        >Los ataques contra ti tienen desventaja salvo que tu velocidad sea 0
+                        >Obtienes +3 al daño de los ataques melé
+                        >Tus conjuros terminan, y no puedes lanzar conjuros nuevos  
+                    
+                </dd>
+            </div>
+        </dl>
+    -->
+    </div>
+
+</body>
+</html>
