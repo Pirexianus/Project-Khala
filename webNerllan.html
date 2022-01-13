@@ -2,7 +2,8 @@
 <html lang="es-ES">
 
 <head>
-<title>La pagina de Nerllan</title>
+<title>El estudio de Nerllan</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
 
 <style>
     body {background-color: rgb(204, 252, 226);}
@@ -28,12 +29,31 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 150%;
     }
+    dd.SpellGlobal
+    {
+        /*border: 2px solid grey;
+        background-image: url("Images/Papyrus.png");
+        background-repeat: no-repeat;*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+    }
+    span.SpellTitle
+    {
+        font-family:"Trirong";
+        font-weight: 900;
+        text-decoration: black;
+        text-shadow: 4px 4px 4px #aaa;
+    }
+    
 </style>
 
 </head>
 
 <body>
-    <h1>La pagina de Santi</h1>
+    <h1>El estudio de Nerllan</h1>
 
     <div><!--Essence global rules section-->
         <h2>La esencia del mundo</h2>
@@ -107,34 +127,20 @@
                 </dd>
             </div>
         </dl>
-
-        <!--
-        <h2 style="font-size: 200%;text-align: center;"><ins>Coste 2</ins></h2>
-        <dl>
-            <div class=EssenceSkillGlobal>
-                <dt class="EssenceSkillTitle">Ira demente</dt>
-                <dd class="EssenceSkillDescription">
-                    <img src="Images/IraDemente.png" alt="Ira demente" style="float:left;width:100px;height:100px;">
-                    
-                    Como acción adicional, entras en un frenesí que dura 1 minuto o hasta verte incapacitado o pasar una ronda sin infligir daño, lo que te otorga estos beneficios:
-                        >Tu velocidad aumenta en 30 pies y no provocas ataques de oportunidad
-                        >Los ataques contra ti tienen desventaja salvo que tu velocidad sea 0
-                        >Obtienes +3 al daño de los ataques melé
-                        >Tus conjuros terminan, y no puedes lanzar conjuros nuevos  
-                    
-                </dd>
-            </div>
-        </dl>
-    -->
     </div>
 
-    <div><!--Especial spells section-->
+    <div style="position: relative;"><!--Especial spells section-->
         <h2>Conjuros unicos</h2>
         <dl>
-            <div><!--TODO: Spell css classes and add them here-->
-                <dt>Deflagracion de esencia</dt>
-                <dd>
-                    <img src="Images/PielGelida.png" alt="Deflagracion de esencia" style="float:left;width:100px;height:100px;">
+            <img src="Images/Papyrus.png" alt="Pergamino de conjuro" style="width: 100%; height:400px">
+            <dd class=SpellGlobal>
+                <table style="width: 1300px; height: 1000px;">
+                <tr>
+                    <td>
+                    <span class=SpellTitle>Deflagracion de Esencia</span>
+                    <img src="Images/DeflagracionEsencia.png" alt="Deflagracion de esencia" style="float:left;width:100px;height:100px;">
+                    </td>
+                    <td>
                     <table>
                         <tr><td><b><i>Nivel 1, evocacion</i></b></td></tr>
                         <tr><td><b>Tiempo de lanzamiento:</b> 1 accion</td></tr>
@@ -142,44 +148,48 @@
                         <tr><td><b>Componentes:</b> V, S, M (Un cadaver cuya esencia no se haya consumido)</td></tr>
                         <tr><td><b>Duracion:</b> Instantaneo</td></tr>
                     </table>
-                    <p>
-                        Este conjuro que te enseño Ivern consume la esencia de un cuerpo que puedas ver desatando una explosión devastadora. 
-                        Elige un cadáver que puedas ver para usarlo como componente del conjuro; Este sufre las consecuencias de <i>Vampirismo de esencia</i> y explota, 
-                        infligiendo 3d10 de daño de fuego y 3d10 de daño necrotico en un area determinada por el tamano del cadaver elegido segun la tabla.
-                        <br>El daño de cada tipo aumenta en 1d10 por cada nivel de espacio de conjuro que gastes por encima de 1.
-                        <table>
-                            <tr>
-                                <th>Tamano del cadaver</th>
-                                <th>Area de la explosion</th>
+                    </td>
+                    <td>
+                        <p>
+                            Este conjuro que te enseño Ivern consume la esencia de un cuerpo que puedas ver desatando una explosión devastadora. 
+                            Elige un cadáver que puedas ver para usarlo como componente del conjuro; Este sufre las consecuencias de <i>Vampirismo de esencia</i> y explota, 
+                            infligiendo 3d10 de daño de fuego y 3d10 de daño necrotico en un area determinada por el tamano del cadaver elegido segun la tabla.
+                            <br>El daño de cada tipo aumenta en 1d10 por cada nivel de espacio de conjuro que gastes por encima de 1.
+                        </p>
+                    </td>
+                    <td>
+                        <table style="border: 1px solid black; border-collapse: collapse;"><!--This is an abomination, but I haven't found a way to style table elements-->
+                            <tr style="border: 1px solid black; border-collapse: collapse;"><!--So that this and the global spell one remain different, so it's like this for now-->
+                                <th style="border: 1px solid black; border-collapse: collapse;">Tamano del cadaver</th>
+                                <th style="border: 1px solid black; border-collapse: collapse;">Area de la explosion</th>
                             </tr>
-                            <tr>
-                                <th>Diminuto</th>
-                                <th>5 pies</th>
+                            <tr style="border: 1px solid black; border-collapse: collapse;">
+                                <th style="border: 1px solid black; border-collapse: collapse;">Diminuto</th>
+                                <th style="border: 1px solid black; border-collapse: collapse;">5 pies</th>
                             </tr>
-                            <tr>
-                                <th>Pequeno</th>
-                                <th>15 pies</th>
+                            <tr style="border: 1px solid black; border-collapse: collapse;">
+                                <th style="border: 1px solid black; border-collapse: collapse;">Pequeno</th>                                    <th style="border: 1px solid black; border-collapse: collapse;">15 pies</th>
                             </tr>
-                            <tr>
-                                <th>Mediano</th>
-                                <th>30 pies</th>
+                            <tr style="border: 1px solid black; border-collapse: collapse;">
+                                <th style="border: 1px solid black; border-collapse: collapse;">Mediano</th>
+                                <th style="border: 1px solid black; border-collapse: collapse;">30 pies</th>
                             </tr>
-                            <tr>
-                                <th>Grande</th>
-                                <th>50 pies</th>
+                            <tr style="border: 1px solid black; border-collapse: collapse;">
+                                <th style="border: 1px solid black; border-collapse: collapse;">Grande</th>
+                                <th style="border: 1px solid black; border-collapse: collapse;">50 pies</th>                                </tr>
+                            <tr style="border: 1px solid black; border-collapse: collapse;">
+                                <th style="border: 1px solid black; border-collapse: collapse;">Enorme</th>
+                                <th style="border: 1px solid black; border-collapse: collapse;">100 pies</th>
                             </tr>
-                            <tr>
-                                <th>Enorme</th>
-                                <th>100 pies</th>
-                            </tr>
-                            <tr>
-                                <th>Gargantuesco</th>
-                                <th>200 pies</th>
+                            <tr style="border: 1px solid black; border-collapse: collapse;">
+                                <th style="border: 1px solid black; border-collapse: collapse;">Gargantuesco</th>
+                                <th style="border: 1px solid black; border-collapse: collapse;">200 pies</th>
                             </tr>
                         </table>
-                    </p>
-                </dd>
-            </div>
+                    </td>
+                </tr>
+                </table>    
+            </dd>
         </dl>
     </div>
     <div><!--Other traits section-->
