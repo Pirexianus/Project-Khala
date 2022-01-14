@@ -10,44 +10,56 @@
     h1 {color: green; font-size: 200%; text-align: center; font-family: Algerian, Arial;}
     h2 {font-size: 250%; text-align: center; font-family: Consolas; text-decoration: underline;}
     p  {margin-left: 80px; margin-right: 80px; font-size: large;}
-    .EssenceSkillGlobal 
+    .essence-skill 
     {
         border: 2px solid grey;
         border-radius: 10px;
         background-color: silver;
         height: 150px;
     }
-    dt.EssenceSkillTitle
+    .essence-skill__title
     {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 200%;
         text-decoration: underline;
         text-shadow: 2px 2px 5px green;
+        margin-left: 15px;
     }
-    dd.EssenceSkillDescription
+    .essence-skill__description
     {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 150%;
     }
-    dd.SpellGlobal
+    .spell
     {
-        /*border: 2px solid grey;
-        background-image: url("Images/Papyrus.png");
-        background-repeat: no-repeat;*/
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: relative;
+        /*top: 50px;*/
+        left: 230px;
+        bottom: 700px;
+        /*transform: translate(-50%, -50%);*/
         font-size: 18px;
     }
-    span.SpellTitle
+    .spell__title
     {
         font-family:"Trirong";
         font-weight: 900;
         text-decoration: black;
         text-shadow: 4px 4px 4px #aaa;
     }
-    
+    tr.invisible-tr
+    {
+        border: 1px solid black; 
+        border-collapse: collapse;
+    }
+    th.invisible-th
+    {
+        border: 1px solid black; 
+        border-collapse: collapse;
+    }
+    .container 
+    {
+        position: relative;
+    }
 </style>
 
 </head>
@@ -64,7 +76,7 @@
             lo que permite observar eventos pasados y futuros relacionados con ella. Asimismo, la esencia se encuentra en toda la vida y al consumir la esencia de un cuerpo
             el resultado es igual con una mosca que con un dragón, pero al hacerlo se "elimina completamente de la existencia" a dicho ser, sin ningún más allá ni 
             forma de resurrección.<br>
-            Si se es sensible a la esencia, es posible encontrarla tirada en lugares donde sus usuarios hayan muerto o se hayan practicado métodos de recolección aparte del vampirismo.
+            Si se es sensible a la esencia, es posible encontrarla  en lugares donde sus usuarios hayan muerto o se hayan practicado métodos de recolección aparte del vampirismo.
             <br>Puedes absorber esencia material entrando en contacto físico con ella (1 pto por cada galón asimilado) mientras tu medidor de esencia no esté lleno
         </p>
     </div>
@@ -74,18 +86,18 @@
         <h2>Tus habilidades de esencia</h2>
         <h2 style="font-size: 200%;text-align: center;"><ins>Globales</ins></h2>
         <dl>
-            <div class=EssenceSkillGlobal>
-                <dt class="EssenceSkillTitle">Ojos de esencia (3 veces por descanso)</dt>
-                <dd class="EssenceSkillDescription">
+            <div class=essence-skill>
+                <dt class="essence-skill__title">Ojos de esencia (3 veces por descanso)</dt>
+                <dd class="essence-skill__description">
                     <img src="Images/OjosEsencia.png" alt="Ojos de esencia" style="float:left;width:100px;height:100px;">
                     Como acción, te vuelves muy sensible a la esencia durante un minuto, lo que te permite ver quiénes son usuarios de esencia, así como los espíritus de esencia
                     con asuntos pendientes y ecos de actos pasados que implicaron esencia. De este modo se puede consumir su esencia o comunicarse y/o aprender sobre ellos.
                 </dd>
             </div>
             
-            <div class=EssenceSkillGlobal>
-                <dt class="EssenceSkillTitle">Vampirismo de esencia</dt>
-                <dd class="EssenceSkillDescription">
+            <div class=essence-skill>
+                <dt class="essence-skill__title">Vampirismo de esencia</dt>
+                <dd class="essence-skill__description">
                     <img src="Images/VampirismoEsencia.png" alt="Vampirismo de esencia" style="float:left;width:100px;height:100px;">
                     Como acción consumes un espíritu de esencia o cadáver o le arrebatas la esencia a un usuario vivo a un alcance de 30 pies. En este último caso, 
                     el objetivo se enfrenta a una TS de inteligencia y no le ocurre nada en caso de éxito, pero en caso de fallo le robas un pto de esencia. 
@@ -93,9 +105,9 @@
                 </dd>
             </div>
 
-            <div class=EssenceSkillGlobal>
-                <dt class="EssenceSkillTitle">Vinculo de esencia</dt>
-                <dd class="EssenceSkillDescription">
+            <div class=essence-skill>
+                <dt class="essence-skill__title">Vinculo de esencia</dt>
+                <dd class="essence-skill__description">
                     <img src="Images/VinculoEsencia.png" alt="Vinculo de esencia" style="float:left;width:100px;height:100px;">
                     Podéis comunicaros telepáticamente con otros usuarios de esencia a una milla a la redonda si los habéis visto con los ojos de esencia al menos una vez. 
                     Es posible impedir a usuarios específicos contactar con vosotros y volver a permitírselo luego.
@@ -103,13 +115,16 @@
             </div>
         </dl>
 
-        <p>En ningún caso puedes sobrepasar el máximo de tu medidor de esencia (actualmente 1 pto).<br> Al finalizar un descanso prolongado, elijes una de tus habilidades de esencia para prepararla y poder usarla.</p>
+        <p>
+            En ningún caso puedes sobrepasar el máximo de tu medidor de esencia (actualmente 1 pto).<br> 
+            Al finalizar un descanso prolongado, elijes una de tus habilidades de esencia para prepararla y poder usarla.
+        </p>
 
         <h2 style="font-size: 200%;text-align: center;"><ins>Coste 1</ins></h2>
         <dl>
-            <div class=EssenceSkillGlobal>
-                <dt class="EssenceSkillTitle">Piel ardiente</dt>
-                <dd class="EssenceSkillDescription">
+            <div class=essence-skill>
+                <dt class="essence-skill__title">Piel ardiente</dt>
+                <dd class="essence-skill__description">
                     <img src="Images/PielArdiente.png" alt="Piel ardiente" style="float:left;width:100px;height:100px;">
                     Como acción adicional cubres tu piel en llamas durante un minuto, lo que te vuelve inmune al fuego y vulnerable al frío. 
                     Cuando un enemigo haga un ataque cuerpo a cuerpo contra ti, recibe tu dado de golpe en daño por fuego. 
@@ -117,9 +132,9 @@
                 </dd>
             </div>
             
-            <div class=EssenceSkillGlobal>
-                <dt class="EssenceSkillTitle">Piel Gelida</dt>
-                <dd class="EssenceSkillDescription">
+            <div class=essence-skill>
+                <dt class="essence-skill__title">Piel Gelida</dt>
+                <dd class="essence-skill__description">
                     <img src="Images/PielGelida.png" alt="Piel Gelida" style="float:left;width:100px;height:100px;">
                     Como acción, maldices a un enemigo a 30 pies de ti a no ser que supere una TS de inteligencia. Durante un minuto resta tu bonificador por competencia
                     a sus tiradas de ataque y pruebas de característica. Si el objetivo hace una TS, puedes usar tu reacción para acabar con la maldición
@@ -132,12 +147,12 @@
     <div style="position: relative;"><!--Especial spells section-->
         <h2>Conjuros unicos</h2>
         <dl>
-            <img src="Images/Papyrus.png" alt="Pergamino de conjuro" style="width: 100%; height:400px">
-            <dd class=SpellGlobal>
+            <img src="Images/Papyrus.png" alt="Pergamino de conjuro" style="width: 100%; height:400px; position: relative;">
+            <dd class=spell>
                 <table style="width: 1300px; height: 1000px;">
                 <tr>
                     <td>
-                    <span class=SpellTitle>Deflagracion de Esencia</span>
+                    <span class=spell__title>Deflagracion de Esencia</span>
                     <img src="Images/DeflagracionEsencia.png" alt="Deflagracion de esencia" style="float:left;width:100px;height:100px;">
                     </td>
                     <td>
@@ -158,38 +173,101 @@
                         </p>
                     </td>
                     <td>
-                        <table style="border: 1px solid black; border-collapse: collapse;"><!--This is an abomination, but I haven't found a way to style table elements-->
-                            <tr style="border: 1px solid black; border-collapse: collapse;"><!--So that this and the global spell one remain different, so it's like this for now-->
-                                <th style="border: 1px solid black; border-collapse: collapse;">Tamano del cadaver</th>
-                                <th style="border: 1px solid black; border-collapse: collapse;">Area de la explosion</th>
+                        <table style="border: 1px solid black; border-collapse: collapse;">
+                            <tr class=invisible-tr>
+                                <th class=invisible-th>Tamano del cadaver</th>
+                                <th class=invisible-th>Area de la explosion</th>
                             </tr>
-                            <tr style="border: 1px solid black; border-collapse: collapse;">
-                                <th style="border: 1px solid black; border-collapse: collapse;">Diminuto</th>
-                                <th style="border: 1px solid black; border-collapse: collapse;">5 pies</th>
+                            <tr class=invisible-tr>
+                                <th class=invisible-th>Diminuto</th>
+                                <th class=invisible-th>5 pies</th>
                             </tr>
-                            <tr style="border: 1px solid black; border-collapse: collapse;">
-                                <th style="border: 1px solid black; border-collapse: collapse;">Pequeno</th>                                    <th style="border: 1px solid black; border-collapse: collapse;">15 pies</th>
+                            <tr class=invisible-tr>
+                                <th class=invisible-th>Pequeno</th>
+                                <th class=invisible-th>15 pies</th>
                             </tr>
-                            <tr style="border: 1px solid black; border-collapse: collapse;">
-                                <th style="border: 1px solid black; border-collapse: collapse;">Mediano</th>
-                                <th style="border: 1px solid black; border-collapse: collapse;">30 pies</th>
+                            <tr class=invisible-tr>
+                                <th class=invisible-th>Mediano</th>
+                                <th class=invisible-th>30 pies</th>
                             </tr>
-                            <tr style="border: 1px solid black; border-collapse: collapse;">
-                                <th style="border: 1px solid black; border-collapse: collapse;">Grande</th>
-                                <th style="border: 1px solid black; border-collapse: collapse;">50 pies</th>                                </tr>
-                            <tr style="border: 1px solid black; border-collapse: collapse;">
-                                <th style="border: 1px solid black; border-collapse: collapse;">Enorme</th>
-                                <th style="border: 1px solid black; border-collapse: collapse;">100 pies</th>
+                            <tr class=invisible-tr>
+                                <th class=invisible-th>Grande</th>
+                                <th class=invisible-th>50 pies</th>                                
                             </tr>
-                            <tr style="border: 1px solid black; border-collapse: collapse;">
-                                <th style="border: 1px solid black; border-collapse: collapse;">Gargantuesco</th>
-                                <th style="border: 1px solid black; border-collapse: collapse;">200 pies</th>
+                            <tr class=invisible-tr>
+                                <th class=invisible-th>Enorme</th>
+                                <th class=invisible-th>100 pies</th>
+                            </tr>
+                            <tr class=invisible-tr>
+                                <th class=invisible-th>Gargantuesco</th>
+                                <th class=invisible-th>200 pies</th>
                             </tr>
                         </table>
                     </td>
                 </tr>
                 </table>    
             </dd>
+            <img src="Images/Papyrus.png" alt="Pergamino de conjuro" style="width: 100%; height:400px; position: relative;">
+            <dd class=spell>
+                <table style="width: 1300px; height: 1000px;">
+                <tr>
+                    <td>
+                    <span class=spell__title>Deflagracion de Esencia</span>
+                    <img src="Images/DeflagracionEsencia.png" alt="Deflagracion de esencia" style="float:left;width:100px;height:100px;">
+                    </td>
+                    <td>
+                    <table>
+                        <tr><td><b><i>Nivel 1, evocacion</i></b></td></tr>
+                        <tr><td><b>Tiempo de lanzamiento:</b> 1 accion</td></tr>
+                        <tr><td><b>Alcance:</b> 30 pies</td></tr>
+                        <tr><td><b>Componentes:</b> V, S, M (Un cadaver cuya esencia no se haya consumido)</td></tr>
+                        <tr><td><b>Duracion:</b> Instantaneo</td></tr>
+                    </table>
+                    </td>
+                    <td>
+                        <p>
+                            Este conjuro que te enseño Ivern consume la esencia de un cuerpo que puedas ver desatando una explosión devastadora. 
+                            Elige un cadáver que puedas ver para usarlo como componente del conjuro; Este sufre las consecuencias de <i>Vampirismo de esencia</i> y explota, 
+                            infligiendo 3d10 de daño de fuego y 3d10 de daño necrotico en un area determinada por el tamano del cadaver elegido segun la tabla.
+                            <br>El daño de cada tipo aumenta en 1d10 por cada nivel de espacio de conjuro que gastes por encima de 1.
+                        </p>
+                    </td>
+                    <td>
+                        <table style="border: 1px solid black; border-collapse: collapse;">
+                            <tr class=invisible-tr>
+                                <th class=invisible-th>Tamano del cadaver</th>
+                                <th class=invisible-th>Area de la explosion</th>
+                            </tr>
+                            <tr class=invisible-tr>
+                                <th class=invisible-th>Diminuto</th>
+                                <th class=invisible-th>5 pies</th>
+                            </tr>
+                            <tr class=invisible-tr>
+                                <th class=invisible-th>Pequeno</th>
+                                <th class=invisible-th>15 pies</th>
+                            </tr>
+                            <tr class=invisible-tr>
+                                <th class=invisible-th>Mediano</th>
+                                <th class=invisible-th>30 pies</th>
+                            </tr>
+                            <tr class=invisible-tr>
+                                <th class=invisible-th>Grande</th>
+                                <th class=invisible-th>50 pies</th>                                
+                            </tr>
+                            <tr class=invisible-tr>
+                                <th class=invisible-th>Enorme</th>
+                                <th class=invisible-th>100 pies</th>
+                            </tr>
+                            <tr class=invisible-tr>
+                                <th class=invisible-th>Gargantuesco</th>
+                                <th class=invisible-th>200 pies</th>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                </table>    
+            </dd>
+
         </dl>
     </div>
     <div><!--Other traits section-->
